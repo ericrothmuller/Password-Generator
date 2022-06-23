@@ -26,7 +26,13 @@ function windowPrompt() {
             var includeLowercase = confirm("Include lowercase letters?")
             if (includeLowercase) {
                 alert("You chose YES")
-        }
+            }
+            var includeUppercase = confirm("Include uppercase letters?")
+            if (includeUppercase) {
+                alert("You chose YES")
+            }
+            
+
 
 
 
