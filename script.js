@@ -27,22 +27,25 @@ function windowPrompt() {
             if (includeLowercase) {
                 alert("You chose YES")
             }
+
             var includeUppercase = confirm("Include uppercase letters?")
             if (includeUppercase) {
                 alert("You chose YES")
             }
+
             var includeNumeric = confirm("Include numeric characters?")
             if (includeNumeric) {
                 alert("You chose YES")
             }
+
             var includeSpecial = confirm("Include special characters?")
-            if (includeSPecial) {
+            if (includeSpecial) {
                 alert("You chose YES")
             }
             
-
-
-
+            if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+                return alert("You must choose to include at least one uppercase, lowercase, numeric, or special character")
+            }
 
 
 
