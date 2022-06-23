@@ -23,6 +23,8 @@ var numbers = "0123456789";
 
 var specialCharacters = "!@#$%^&*()";
 
+var yourPassword = "";
+
 function windowPrompt() {
     let passwordLength = prompt("How long do you want your password to me?", "Enter a number between 8 and 128");
         if (passwordLength >= 8 && passwordLength <= 128) {
