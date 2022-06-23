@@ -30,22 +30,26 @@ function windowPrompt() {
         if (passwordLength >= 8 && passwordLength <= 128) {
             var includeLowercase = confirm("Include lowercase letters?")
             if (includeLowercase) {
-                alert("You chose YES")
+                yourPassword += lowercaseLetters;
+                alert(yourPassword)
             }
 
             var includeUppercase = confirm("Include uppercase letters?")
             if (includeUppercase) {
-                alert("You chose YES")
+                yourPassword += uppercaseLetters;
+                alert(yourPassword)
             }
 
             var includeNumeric = confirm("Include numeric characters?")
             if (includeNumeric) {
-                alert("You chose YES")
+                yourPassword += numbers;
+                alert(yourPassword)
             }
 
             var includeSpecial = confirm("Include special characters?")
             if (includeSpecial) {
-                alert("You chose YES")
+                yourPassword += specialCharacters;
+                alert(yourPassword)
             }
             
             if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
