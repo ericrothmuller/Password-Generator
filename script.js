@@ -15,10 +15,9 @@ generateBtn.addEventListener("click", writePassword);
 
 // Adds Window Prompt
 
-var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
 
-var uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
+var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function windowPrompt() {
     let passwordLength = prompt("How long do you want your password to me?", "Enter a number between 8 and 128");
