@@ -31,6 +31,10 @@ function windowPrompt() {
             if (includeUppercase) {
                 alert("You chose YES")
             }
+            var includeNumeric = confirm("Include numeric?")
+            if (includeNumeric) {
+                alert("You chose YES")
+            }
             
 
 
