@@ -23,6 +23,10 @@ var numbers = "0123456789";
 
 var specialCharacters = "!@#$%^&*()";
 
+selectedCharacterOptions = "";
+
+yourPassword = "";
+
 function windowPrompt() {
     let passwordLength = prompt("How long do you want your password to me?", "Enter a number between 8 and 128");
         if (passwordLength >= 8 && passwordLength <= 128) {
@@ -53,12 +57,17 @@ function windowPrompt() {
             if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
                 return alert("You must choose to include at least one uppercase, lowercase, numeric, or special character")
             }
-            
-            var selectedCharacterOptions = 
+
+            for (let i = 0; i < passwordLength; i++) {
+                yourPassword += selectedCharacterOptions.charAt(
+                    Math.floor(Math.random() * selectedCharacterOptions.length)
+                )
+                }
+
 
             alert(yourPassword);
 
-
+            
 
     }
     else {
