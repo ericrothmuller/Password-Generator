@@ -23,38 +23,40 @@ var numbers = "0123456789";
 
 var specialCharacters = "!@#$%^&*()";
 
-var yourPassword = "";
-
 function windowPrompt() {
     let passwordLength = prompt("How long do you want your password to me?", "Enter a number between 8 and 128");
         if (passwordLength >= 8 && passwordLength <= 128) {
             var includeLowercase = confirm("Include lowercase letters?")
             if (includeLowercase) {
-                yourPassword += lowercaseLetters;
-                alert(yourPassword)
+                selectedCharacterOptions += lowercaseLetters;
+                alert(selectedCharacterOptions)
             }
 
             var includeUppercase = confirm("Include uppercase letters?")
             if (includeUppercase) {
-                yourPassword += uppercaseLetters;
-                alert(yourPassword)
+                selectedCharacterOptions += uppercaseLetters;
+                alert(selectedCharacterOptions)
             }
 
             var includeNumeric = confirm("Include numeric characters?")
             if (includeNumeric) {
-                yourPassword += numbers;
-                alert(yourPassword)
+                selectedCharacterOptions += numbers;
+                alert(selectedCharacterOptions)
             }
 
             var includeSpecial = confirm("Include special characters?")
             if (includeSpecial) {
-                yourPassword += specialCharacters;
-                alert(yourPassword)
+                selectedCharacterOptions += specialCharacters;
+                alert(selectedCharacterOptions)
             }
             
             if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
                 return alert("You must choose to include at least one uppercase, lowercase, numeric, or special character")
             }
+            
+            var selectedCharacterOptions = 
+
+            alert(yourPassword);
 
 
 
