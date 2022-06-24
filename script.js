@@ -65,7 +65,7 @@ function windowPrompt() {
                 }
 
 
-            alert(yourPassword);
+            document.getElementById("password").innerHTML = yourPassword;
 
             
 
