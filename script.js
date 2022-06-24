@@ -15,19 +15,20 @@ generateBtn.addEventListener("click", writePassword);
 
 // Adds Window Prompt
 
-var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-
-var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-var numbers = "0123456789";
-
-var specialCharacters = "!@#$%^&*()";
-
-selectedCharacterOptions = "";
-
-yourPassword = "";
-
 function windowPrompt() {
+
+    var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+
+    var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    
+    var numbers = "0123456789";
+    
+    var specialCharacters = "!#$%&()*+,-./:;<=>?@[^]_`{|}~";
+    
+    selectedCharacterOptions = "";
+    
+    yourPassword = "";
+
     let passwordLength = prompt("How long do you want your password to me?", "Enter a number between 8 and 128");
         if (passwordLength >= 8 && passwordLength <= 128) {
             var includeLowercase = confirm("Include lowercase letters?")
@@ -61,7 +62,8 @@ function windowPrompt() {
                 }
 
 
-            document.getElementById("password").innerHTML = yourPassword;
+                document.getElementById("password").innerHTML = yourPassword;
+
 
             
 
