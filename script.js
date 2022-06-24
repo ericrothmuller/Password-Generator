@@ -33,25 +33,21 @@ function windowPrompt() {
             var includeLowercase = confirm("Include lowercase letters?")
             if (includeLowercase) {
                 selectedCharacterOptions += lowercaseLetters;
-                alert(selectedCharacterOptions)
             }
 
             var includeUppercase = confirm("Include uppercase letters?")
             if (includeUppercase) {
                 selectedCharacterOptions += uppercaseLetters;
-                alert(selectedCharacterOptions)
             }
 
             var includeNumeric = confirm("Include numeric characters?")
             if (includeNumeric) {
                 selectedCharacterOptions += numbers;
-                alert(selectedCharacterOptions)
             }
 
             var includeSpecial = confirm("Include special characters?")
             if (includeSpecial) {
                 selectedCharacterOptions += specialCharacters;
-                alert(selectedCharacterOptions)
             }
             
             if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
